@@ -1,11 +1,12 @@
-a=int(input("Enter the range of fibonacci series: "))
-fno=0
-sno=1
-for i in range (0,a+1):
-    print(fno," ")
-    print(sno," ")
-    print(tno," ")
-    tno=fno+sno
-    sno=tno
-    fno=sno
-print("Result: ",tno)
+fno = 1
+sno = 1
+num = int(input("Enter the range: "))
+i = 1
+print(fno, ' ')
+print(sno, ' ')
+while i <= num:
+    tno = fno + sno
+    print(tno, ' ')
+    fno = sno
+    sno = tno
+    i = i + 1
